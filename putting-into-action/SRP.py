@@ -17,5 +17,6 @@ class EmployeeManager:
         self.employees:dict = dict()
 
 
-    def add_employee(self):
-        pass
+    def add_employee(self, employee:dict):
+        if employee.name not in self.employees:
+           self.employees.update({"":""})  
